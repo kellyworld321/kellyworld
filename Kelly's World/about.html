@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Kelly</title>
+  <link rel="stylesheet" href="about.css">
+</head>
+<body class="about-page">
+
+  <!-- 🔥 Video Background -->
+  <video autoplay muted loop id="bg-video">
+    <source src="kelly.mp4" type="video/mp4">
+   
+  </video>
+
+  <!-- Navigation Bar -->
+<nav>
+    <div class="logo">🔥 Kelly</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <ul id="menu">
+        <nav class="neon-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href=""></a>
+        <a href="contact.html">Contact</a>
+</nav>
+
+    </ul>
+</nav>
+
+  <!-- 🔥 Overlay Content -->
+  <div class="about-content">
+    <h1 class="typing-text"></h1>
+   <p class="fade-in fly-up" id="afterTyping">
+
+💻 About Me – Kelly the Web Designer
+
+
+
+
+
+</p>
+
+
+<p>Hi, I’m Kelly <br>
+  
+  a passionate and creative Website Designer with a strong eye for detail and style. <br>
+  
+  I don't just build websites, I craft online experiences that are modern, clean, fast, and 100% mobile responsive. <br>
+
+Whether you want a personal website, a business landing page, an online store, or a portfolio, I will bring your ideas to life with beauty and precision.
+</p>
+
+<h2> ✅ Why Choose Me? </h2>
+<p> 
+
+
+
+<h2>🔥 No Regrets — Just Results</h2>
+
+You won’t regret trusting me with your project. I deliver on time, and I bring fresh ideas that help your brand shine online. <br>
+When I design for you, it won't just work, it will look atractive — it's passion. <br>
+
+Let me turn your imagination into a stunning website you'll be proud of. 🚀</p>
+  </div>
+
+  <!-- ✅ Typing Script -->
+ <script>
+  const text = "I am Kelly";
+  let index = 0;
+  function typeWriter() {
+    if (index < text.length) {
+      document.querySelector(".typing-text").innerHTML += text.charAt(index);
+      index++;
+      setTimeout(typeWriter, 150);
+    } else {
+      // Reveal paragraph after typing finishes
+      document.getElementById("afterTyping").style.animation = "fadeIn 1.5s ease forwards, flyUp 1.5s ease forwards";
+    }
+  }
+  window.onload = typeWriter;
+</script>
+
+</body>
+</html>

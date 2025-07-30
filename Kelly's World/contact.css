@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0d0d0d;
+  color: white;
+  overflow: hidden;
+  cursor: url('https://cur.cursors-4u.net/others/oth-9/oth899.cur'), auto;
+}
+
+.contact-container {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+input, textarea {
+  width: 80%;
+  max-width: 500px;
+  padding: 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+button {
+  background: #f06;
+  color: white;
+  padding: 15px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 0 20px #f06;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 35px #f06;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 15px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  background: #333;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  background: #f06;
+  box-shadow: 0 0 15px #f06;
+}
+
+.map-style {
+  margin-top: 40px;
+  width: 90%;
+  max-width: 600px;
+  height: 300px;
+  border-radius: 15px;
+  border: 2px solid #f06;
+}
+
+/* Snow Canvas */
+#snow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 999;
+}

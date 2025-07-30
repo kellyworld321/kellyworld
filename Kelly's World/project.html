@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Projects - Kelly</title>
+  <link rel="stylesheet" href="project.css">
+</head>
+<body class="projects-page">
+
+  <!-- 🌄 Background Image -->
+  <div class="bg-image"></div>
+
+  <!-- 💻 Overlay Content -->
+  <div class="projects-content">
+    <h1 class="typing-project-text"></h1>
+
+    <!-- 🔗 Project Cards -->
+    <div class="projects-grid">
+      <a href="https://your-first-project-link.com" class="project-card" target="_blank">
+        <h2>My First Portfolio</h2>
+        <p>A stylish portfolio built with HTML, CSS & animations.</p>
+      </a>
+
+      <a href="https://your-second-project-link.com" class="project-card" target="_blank">
+        <h2>Music Promo Page</h2>
+        <p>A sleek one-pager for promoting my music journey.</p>
+      </a>
+
+      <a href="https://your-third-project-link.com" class="project-card" target="_blank">
+        <h2>Business Landing Page</h2>
+        <p>A modern business page with contact forms & branding.</p>
+      </a>
+    </div>
+  </div>
+
+  <!-- 🧠 Typing Animation -->
+  <script>
+    const projectText = "Here are some of my best projects, carefully crafted for real clients and personal goals.";
+    let pIndex = 0;
+    function typeProjectText() {
+      if (pIndex < projectText.length) {
+        document.querySelector(".typing-project-text").innerHTML += projectText.charAt(pIndex);
+        pIndex++;
+        setTimeout(typeProjectText, 80);
+      }
+    }
+    window.onload = typeProjectText;
+  </script>
+
+  
+<a href="index.html" class="back-home-btn">← Back to Home</a>
+
+</body>
+</html>

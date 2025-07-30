@@ -1,0 +1,88 @@
+/* 🌄 Projects Page Background */
+.bg-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('pro.jpg') no-repeat center center/cover;
+  z-index: -1;
+  filter: brightness(0.5);
+}
+
+/* 🎯 Project Content Styling */
+.projects-content {
+  padding: 60px 30px;
+  color: white;
+  text-align: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.typing-project-text {
+  font-size: 2.2rem;
+  font-weight: bold;
+  border-right: 3px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+/* 🧱 Project Cards Grid */
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #ffffff44;
+  padding: 20px;
+  border-radius: 15px;
+  width: 300px;
+  text-align: left;
+  transition: 0.5s;
+  color: rgb(253, 0, 0);
+  text-decoration: none;
+  backdrop-filter: blur(4px);
+}
+
+.project-card:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.03);
+}
+
+.project-card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 1rem;
+}
+
+
+
+
+.back-home-btn {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  background-color: #ffffff22;
+  color: white;
+  text-decoration: none;
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 1rem;
+  border: 1px solid white;
+  transition: 0.3s;
+  backdrop-filter: blur(5px);
+}
+
+.back-home-btn:hover {
+  background-color: #ffffff44;
+  transform: scale(1.05);
+}
